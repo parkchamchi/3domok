@@ -1,0 +1,19 @@
+{
+	"files.exclude": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/CVS": true,
+		"**/.DS_Store": true,
+		"**/*.o": true,
+		"**/*.exe": true,
+	},
+	"files.associations": {
+		"assert.h": "c",
+		"float.h": "c",
+		"jni.h": "c",
+		"base.h": "c",
+		"emscripten.h": "c",
+		"html5.h": "c"
+	}
+}
