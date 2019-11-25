@@ -302,7 +302,7 @@ ifeq ($(PLATFORM),PLATFORM_RPI)
 endif
 
 ifeq ($(USE_JAVA), TRUE) 
-	LDFLAGS += -L"$(JAVA_PATH)/jre/bin/server"
+	LDFLAGS += -L"$(JAVA_PATH)/jre/bin" -L"$(JAVA_PATH)/jre/bin/server"
 endif
 
 # Define any libraries required on linking
