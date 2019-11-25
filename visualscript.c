@@ -488,6 +488,9 @@ static void ChangePiecesizeMult(int size) {
 	case 3:
 		piecesize_mult=1.25f;
 		break;
+	default:
+		return;
+		break;
 	}
 
 	UpdateNotiBox("Piece size changed.\n");

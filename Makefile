@@ -66,7 +66,7 @@ USE_WAYLAND_DISPLAY   ?= FALSE
 
 # Link JNI
 USE_JAVA ?= FALSE
-JAVA_PATH ?= C:/Program Files/Java/jdk1.8.0_231
+JAVA_PATH ?= "%JAVA_HOME"
 
 # Determine PLATFORM_OS in case PLATFORM_DESKTOP selected
 ifeq ($(PLATFORM),PLATFORM_DESKTOP)
@@ -302,7 +302,7 @@ ifeq ($(PLATFORM),PLATFORM_RPI)
 endif
 
 ifeq ($(USE_JAVA), TRUE) 
-	LDFLAGS += -L"$(JAVA_PATH)/jre/bin" -L"$(JAVA_PATH)/jre/bin/server"
+	LDFLAGS += -L"$(JAVA_PATH)/lib" -L"$(JAVA_PATH)/jre/bin/server"
 endif
 
 # Define any libraries required on linking
