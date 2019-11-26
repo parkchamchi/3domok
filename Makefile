@@ -66,7 +66,7 @@ USE_WAYLAND_DISPLAY   ?= FALSE
 
 # Link JNI
 USE_JAVA ?= FALSE
-JAVA_PATH ?= "%JAVA_HOME%"
+JAVA_PATH ?= C:\Program Files (x86)\Java\jdk1.8.0_231
 
 # Determine PLATFORM_OS in case PLATFORM_DESKTOP selected
 ifeq ($(PLATFORM),PLATFORM_DESKTOP)
@@ -363,7 +363,7 @@ ifeq ($(PLATFORM),PLATFORM_WEB)
 endif
 
 ifeq ($(USE_JAVA), TRUE)
-	LDLIBS += -ljvm
+	LDLIBS += -ljvm #-l:jvm.lib -l:jvm.dll
 endif
 
 # Define a recursive wildcard function
