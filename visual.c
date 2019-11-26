@@ -74,7 +74,7 @@ static float cam_r=3*GRIDLEN; //distance of camera from {0, 0, 0}
 static float cam_theta=1.4f, cam_phi=4.9f; //for camera. 0 <= theta <= pi, 0 <= phi < 2*pi.
 
 /*Update the frame*/
-void UpdateDrawFrame(void);
+static void UpdateDrawFrame(void);
 /*Update the camera position*/
 static void UpdateCameraPos(void);
 /*Check mouse collision*/
@@ -134,7 +134,7 @@ int main(void) {
     return 0;
 }
 
-void UpdateDrawFrame(void) {
+static void UpdateDrawFrame(void) {
 #ifndef USECUBES
 	const int PIECE_DETAIL=6; //detail of pieces;
 #endif
