@@ -1,5 +1,7 @@
 # 3domok
-This 2019 project was to create the game of Omok in 3D space.
+This 2019 project was to create the game of Omok in 3D space. \
+[Web Version](https://parkchamchi.github.io/3domok/) \
+[Windows Executable Version](https://github.com/parkchamchi/3domok/releases/tag/v0.1-alpha)
 
 ## Screenshot
 ![screenshot](3domok.net/screenshot.png)
