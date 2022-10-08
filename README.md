@@ -1,11 +1,16 @@
 # 3domok
-Source file for 3domok.net
-parkchamchi@gmail.com
+This 2019 project was to create the game of Omok in 3D space.
 
-3D Omok is an altered form of the game Omok for 3D environment. The game is distributed via 3domok.net.
+## Screenshot
+![screenshot](3domok.net/screenshot.png)
 
-This game uses raylib (raylib.com) library. It must be installed to build these source files. Alter Makefile to change the path of the library.
+## Library used
+This project used [Raylib](https://github.com/raysan5/raylib) graphics library.
 
-base.h, base.c: the base code \
-visualscript.h, visualscript.c: the game logic code \
+### Codes
+base.c: the base code \
+visualscript.c: the game logic code \
 visual.c: the visual code (main program)
+
+### By
+parkchamchi@gmail.com
